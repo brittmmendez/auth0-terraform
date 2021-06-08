@@ -1,0 +1,19 @@
+type Mutation {
+    createPost(title: String!, description: String): Post
+}
+
+type Post {
+    id: ID!
+    title: String!
+    description: String
+    consumerId: ID
+}
+
+type Query {
+    listPosts: [Post]
+}
+
+schema {
+    query: Query
+    mutation: Mutation
+}

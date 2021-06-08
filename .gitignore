@@ -1,0 +1,17 @@
+# Terraform specific
+.terraform
+*.tfstate
+*.tfstate*
+.terraform.lock.hcl
+*.retry
+*.plan
+plan
+*.auto.tfvars
+.vagrant
+
+# ignore terraform log and generated files
+tf.log
+
+
+# General
+.DS_Store
